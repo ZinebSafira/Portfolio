@@ -1,0 +1,157 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    /* Now using var(--white) for background */
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    height: 100vh;
+    /* Adjusted to 100vh for full viewport height */
+}
+
+.contact__head {
+    font-family: Chapeau-Thin;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black);
+    /* Now using var(--black) for text color */
+    letter-spacing: 1px;
+    margin-bottom: 36px;
+}
+
+.contact__txt {
+    color: var(--black);
+    /* Text color set to var(--black) */
+    text-align: center;
+    font-family: Chapeau-Thin;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.33px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    max-width: 310px;
+}
+
+.btn__contact--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__contact {
+    font-family: Chapeau-Mono;
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--black);
+    /* Button text now var(--black) */
+    letter-spacing: 1.14px;
+    text-align: left;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-bottom: 1px var(--black) solid;
+    /* Border color now var(--black) */
+    background: var(--white);
+    /* Background set to var(--white) */
+    width: 300px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+.btn__contact:after {
+    position: relative;
+    content: "\2192";
+    color: var(--black);
+    /* Arrow color set to var(--black) */
+    transition: 150ms ease-in-out;
+    margin-left: 20px;
+    float: right;
+}
+
+.btn__contact:hover:after {
+    transition: 150ms ease-in-out;
+    color: var(--projcolor);
+    /* Ensure this color is visible on white background */
+}
+
+.btn__contact:hover {
+    border-bottom: 1px var(--projcolor) solid;
+    /* Ensure this is a color visible on white */
+    transition: 150ms ease-in-out;
+}
+
+.marquee {
+    color: var(--white);
+    /* Adjust if necessary for visibility */
+}
+
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .contact__head {
+        font-size: 32px;
+    }
+
+    .btn__contact--wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* DESKTOP VERSION */
+
+
+@media (min-width: 1024px) {
+
+    .contact {
+        padding-left: 16vw;
+        padding-right: 16vw;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        flex-direction: row;
+    }
+
+
+    .contact__head {
+        font-size: 4vw;
+    }
+
+    .contact__txt {
+        font-size: 1.5vw;
+        ;
+        line-height: 140%;
+        text-align: left;
+        max-width: 30vw;
+    }
+
+    .btn__contact--wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
+    @media (min-width: 2560px) {
+        .contact {
+            padding-left: 24vw;
+            padding-right: 24vw;
+        }
+    }
+}

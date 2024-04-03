@@ -1,0 +1,79 @@
+.howMightWe {
+    background-color: var(--black);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.howMightWe__txt {
+    font-family: Chapeau-Light;
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 0.93px;
+    text-align: center;
+    line-height: 24px;
+    padding: 5vw;
+}
+
+.howMightWe__head {
+    font-family: Chapeau-Mono;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    color: var(--white) ;
+    padding-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .howMightWe {
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .howMightWe__txt {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+
+/* DESKTOP VERSION */
+
+
+@media (min-width: 1024px) {
+
+    .howMightWe {
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin-top: 36px;
+        margin-left: 16vw;
+        margin-right: 16vw;
+        border-radius: 24px;
+    }
+
+    .howMightWe__txt {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+}
+
+/* 4K VERSION */
+@media (min-width: 2560px) {
+    .howMightWe {
+        margin-left: 24vw;
+        margin-right: 24vw;
+    }
+}

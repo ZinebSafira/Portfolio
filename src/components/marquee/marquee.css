@@ -1,0 +1,43 @@
+
+  /* Hero Image */
+  .marquee__wrap {
+    width: 100vw; 
+    z-index: 10;
+  }
+
+  .marquee {
+    color: var(--black);
+    position: relative;
+    bottom: 0;
+    white-space: nowrap;
+    background-color: var(--white);;
+    border-top: 2px var(--black) solid;
+    border-bottom: 2px var(--black) solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Chapeau-Mono;
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 24px;
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .marquee__spacing {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: var(--black);
+    text-decoration: underline;
+  }
+
+  .marquee__spacing:hover {
+    text-decoration: none;
+  }
+
+  .marquee__prefix {
+    padding-left: 0px;
+    padding-right: 2px;
+  }
